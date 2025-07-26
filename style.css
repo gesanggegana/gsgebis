@@ -1,0 +1,171 @@
+:root {
+  --primary: #87CEEB;
+  --gray: #f0f0f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: white;
+  color: #333;
+}
+
+header {
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header input[type="text"] {
+  width: 40%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.icons button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.categories {
+  background: var(--gray);
+  padding: 0.5rem;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.categories button {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  padding: 1rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.product button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#cartSidebar {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 300px;
+  background: white;
+  height: 100%;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+  padding: 1rem;
+  transition: right 0.3s;
+  z-index: 999;
+}
+
+#cartSidebar.show {
+  right: 0;
+}
+
+#cartSidebar ul {
+  list-style: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.detail-image img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.detail-info {
+  max-width: 400px;
+}
+
+.detail-info h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.detail-info p {
+  margin-bottom: 0.5rem;
+}
+
+.detail-info button {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

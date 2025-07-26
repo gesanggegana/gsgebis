@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IndoExport Hub</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/lillogo.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.png"/>
+    <input type="text" id="searchInput" placeholder="Pencarian.." />
+    <div class="icons">
+      <button onclick="toggleCart()">🛒</button>
+      <button>👤</button>
+    </div>
+  </header>
+
+  <nav class="categories">
+    <button onclick="filterCategory('Semua')">Semua</button>
+    <button onclick="filterCategory('Elektronik')">Pertanian</button>
+    <button onclick="filterCategory('Rumah Tangga')">Perkebunan</button>
+    <button onclick="filterCategory('Fashion')">Kehutanan</button>
+    <button onclick="filterCategory('Rumah Tangga')">Kelautan</button>
+    <button onclick="filterCategory('Rumah Tangga')">Kerajinan Tangan</button>
+  </nav>
+
+  <section class="banner">
+    <img src="images/bannerpromo.png" alt="Banner Promo" />
+  </section>
+
+  <main>
+    <h2>Produk Terlaris</h2>
+    <div class="product-grid" id="productGrid">
+      <!-- Produk akan dirender dari JavaScript -->
+    </div>
+  </main>
+
+  <aside id="cartSidebar">
+    <h3>Keranjang Belanja</h3>
+    <ul id="cartItems"></ul>
+    <p>Total: <span id="cartTotal">Rp0</span></p>
+    <button onclick="toggleCart()">Tutup</button>
+  </aside>
+
+
+  <!--BATAS FOOTERRRRRRRRRRRRRRRRRRRRRRRRRRRRRR-->
+  <footer>
+    <p>&copy; 2025 IndoExportHub. Hanya Untuk Mengumpulkan Tugas</p>
+  </footer>
+
+  <script src="script.js"></script>
+  
+  
+</body>
+</html>
